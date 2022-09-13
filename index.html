@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <h1 class="hide">HIDE</h1>
+
+        <div class="backdrop hidden__backdrop"></div>
+        <div class="modal hidden">
+            <h2></h2>
+        </div>
+
+        <div class="calculator">
+            <!-- Display -->
+            <div class="display">
+                <h1></h1>
+            </div>
+
+            <!-- Operator Buttons -->
+            <div class="operator__btns--group">
+                <button class="operator" value="+">+</button>
+                <button class="operator" value="-">-</button>
+                <button class="operator" value="*">×</button>
+                <button class="operator" value="/">÷</button>
+            </div>
+            <!-- Digit Buttons -->
+            <div class="digit__btns--group">
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button class="decimal" value=".">.</button>
+                <button value="0">0</button>
+                <button class="clear">C</button>
+            </div>
+            <!-- Equal Button -->
+            <div class="equal__wrapper">
+                <button class="equal">=</button>
+            </div>
+        </div>
+        <p class="copyright">
+            <i class="fa-solid fa-chevron-left"></i
+            ><i class="fa-solid fa-chevron-right"></i> with
+            <i class="fa-solid fa-heart"></i>
+            by Naheed. <i class="fa-regular fa-copyright"></i> <span></span>
+        </p>
+    </body>
+</html>
