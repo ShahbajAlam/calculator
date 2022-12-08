@@ -83,7 +83,7 @@ const clearAll = () => {
 const operatorInput = (userInput, internal) => {
     //If the very first input is an operator, that means no operand is present yet
     //In that case, we wanna show an alert and return
-    if (!firstOperand) {
+    if (!firstOperand && firstOperand !== 0) {
         showBackdrop();
         showModal("Enter an operand first");
         return;
