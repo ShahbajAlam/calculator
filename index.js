@@ -91,7 +91,10 @@ const operatorInput = (userInput, internal) => {
 
     //If both the first and second operand is present,  we wanna calculate them
     //Because we wanna use the result as the first operand for the next operation
-    if (firstOperand && secondOperand) calculate();
+    if (secondOperand) {
+        if (firstOperand) calculate();
+        else if (firstOperand === 0) calculate();
+    }
 
     //Otherwise we are appending the operator to the display
     //But we have a problem here
